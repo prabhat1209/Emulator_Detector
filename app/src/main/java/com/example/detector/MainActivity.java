@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
                 || Build.MODEL.contains("Emulator")
                 || Build.MODEL.contains("Android SDK built for x86")
                 || Build.MANUFACTURER.contains("Genymotion")
+                ||Build.BOARD == "QC_Reference_Phone"
+                || Build.HOST.startsWith("Build")
                 || Build.PRODUCT.contains("sdk_google")
                 || Build.PRODUCT.contains("google_sdk")
                 || Build.PRODUCT.contains("sdk")
